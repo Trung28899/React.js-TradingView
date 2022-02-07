@@ -6,8 +6,12 @@
 - Popular library for building chart views in Crypto industry
 
 - This is the repository to mess around with different charts
+- Learning marcius-capital/binance-api at the same time
 
 2. Resources:
+
+- marcius-capital/binance-api
+  https://github.com/marcius-capital/binance-api
 
 - Light Weight Charts Getting Started:
   https://tradingview.github.io/lightweight-charts/docs
@@ -18,5 +22,10 @@
 - TradingView all libraries:
   +, https://in.tradingview.com/HTML5-stock-forex-bitcoin-charting-library/
 
-- Library installation:
+3. Packages Installation:
+
+- LightWeight installation:
   +, npm install lightweight-charts
+
+- marcius-capital/binance-api installation:
+  +, npm install @marcius-capital/binance-api

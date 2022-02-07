@@ -1,33 +1,24 @@
-import { useEffect } from "react";
-import { createChart } from "lightweight-charts";
-import "./index.css";
-import { areaChartData } from "./data";
-import { candleStickData } from "./data";
+import React, { useEffect } from "react";
+import GettingStarted from "./Charts/GettingStarted";
+import api from "@marcius-capital/binance-api";
 
-function App() {
+const App = () => {
+  const fetchData = async () => {
+    const data = await api.rest.trades({ symbol: "BTCUSDT", limit: 20 });
+    console.log(data);
+  };
+
   useEffect(() => {
-    const tvChartElement = document.getElementById("tvchart");
-
-    if (tvChartElement) {
-      const chart = createChart(document.body, {
-        width: 1000,
-        height: 300,
-      });
-
-      const areaSeries = chart.addAreaSeries();
-      areaSeries.setData(areaChartData);
-
-      // const candlestickSeries = chart.addCandlestickSeries();
-      // candlestickSeries.setData(candleStickData);
-    }
+    fetchData();
   });
 
   return (
-    <div className="tradingView">
-      <h2>Trading View</h2>
-      <div id="tvchart"></div>
+    <div>
+      <div>
+        <GettingStarted />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

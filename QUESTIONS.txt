@@ -1,0 +1,21 @@
+1, Task 1: 
+
+Question 1: Is there any specific requirements for What kind of data that 
+the chart need to present ? Or I can present any kind of data that 
+I want ? 
+
+For example: 
+    - Do I show the price of 1 symbol over a period of time ? 
+    - Do I show different prices of different symbols over a period of time ?
+
+Please specify clearer on what data should be shown on the chart
+Also please let me know if I can choose any type of data from Binance api
+to complete this test
+
+Question 2: Please gives some hints on what should the unit for vertical axis 
+and horizontal axis ? 
+
+2, Task 2: 
+
+Question 3: Please give some hint and explain the definition 
+of "chart resolution" and "interval selector"
